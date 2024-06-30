@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
   vars: 
-   course: "devops"
-   trainer: "mohan"
-   duration: "60hrs"
+   course: "Ansible"
+   trainer: "Venkat"
+   duration: "25hrs"
   tasks:
    - name: print information
      ansible.builtin.debug:
