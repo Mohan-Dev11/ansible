@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: dev
+  hosts: all
   become: yes
   tasks: #list hosts
   - name: pinging the server
