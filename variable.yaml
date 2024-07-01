@@ -1,10 +1,8 @@
 - name: variables
   hosts: localhost
-  vars: 
-   course: "JAVA"
-   trainer: "BARATH"
-   duration: "100hrs"
+  vars_file:
+  - varsinfo.yaml 
   tasks:
-   - name: print information
-     ansible.builtin.debug:
+  - name: print information
+    ansible.builtin.debug:
        msg: "I am learning {{course}} from trainer {{trainer}}, duration is {{duration}}"
