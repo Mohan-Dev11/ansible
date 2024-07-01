@@ -5,15 +5,15 @@
     prompt: check the number
     private: no
   tasks:
-  - name: number is less than 20
+  - name: number is less than 30
     ansible.builtin.debug:
-      msg: "given number {{number}} is less than 20"
-      when: number | int < 20
+      msg: "given number {{number}} is less than 30"
+      when: number | int < 30
 
-  - name: number is greter than or equal to 20
+  - name: number is greter than or equal to 
     ansible.builtin.debug:
-      msg: "given number {{number}} is greater than or equal to 20"
-      when: number | int >= 20
+      msg: "given number {{number}} is greater than or equal to 30"
+      when: number | int >= 30
 
   
   
