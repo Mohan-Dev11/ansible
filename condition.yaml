@@ -1,0 +1,19 @@
+- name: check the number 
+  hosts: localhost
+  vars_prompt: 
+  - name: number
+    prompt: check the number
+    private: no
+  tasks:
+  - name: number is less than 20
+    ansible.buitin.debug:
+      msg: "given number {{number}} is less than 20"
+      when: number | int < 20
+
+  - name: number is greter than or equal to 20
+    ansible.builtin.debug:
+      msg: "given number {{number}} is greater than or equal to 20"
+      when: number | int >= 20
+          
+  
+  
