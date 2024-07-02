@@ -24,3 +24,18 @@
   - name: min and max
     ansible.builtin.debug:
       msg: " min age is :{{ ages | min }} max age is : {{ ages| max }}"          
+
+- name: converto dict to dict2
+  hosts: localhost
+  vars:
+   my_dict:
+    Course: Devops
+    Trainer: Barath
+    Duration: 20hrs 
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "before convert: {{ my_dict }}"
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "after convert: {{ my_dict | dict2items }}"            
