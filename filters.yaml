@@ -1,0 +1,6 @@
+- name: change to upper case
+  hosts: localhost
+  tasks:
+  - name : upper case
+    ansible.builtin.debug:
+      msg: "hello good morning my dear friend | upper"
