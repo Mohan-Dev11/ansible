@@ -7,12 +7,12 @@
   tasks:
   - name: number is less than 30
     ansible.builtin.debug:
-      msg: "given number {{number}} is less than 30"
+      msg: "Given number {{number}} is less than 30"
     when: number | int < 30
 
   - name: number is greater than or equal to 30
     ansible.builtin.debug:
-      msg: "given number {{number}} is greater than or equal to 30"
+      msg: "Given number {{number}} is greater than or equal to 30"
     when: number | int >= 30
 
   
