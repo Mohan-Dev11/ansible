@@ -1,0 +1,11 @@
+- name: basic loops script
+  hosts: localhost
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}"
+    loop:
+    - Devops
+    - Linus
+    - Ansible
+    - AWS  
