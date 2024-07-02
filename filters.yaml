@@ -17,7 +17,7 @@
       msg: "{{ numbers | unique }}"    
 
 - name: min and max 
-  hosts: loaclhost
+  hosts: localhost
   vars:
    ages: [12, 7, 27, 35, 57]
   tasks:
