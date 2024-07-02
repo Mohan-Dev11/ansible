@@ -8,9 +8,9 @@
   - name: number is less than 40
     ansible.builtin.debug:
       msg: "given number {{number}} is less than 40"
-      when: number | int < 40
+    when: number | int < 40
 
-  - name: number is greter than or equal to 
+  - name: number is greater than or equal to 
     ansible.builtin.debug:
       msg: "given number {{number}} is greater than or equal to 40"
-      when: number | int >= 40
+    when: number | int >= 40 
