@@ -1,8 +1,8 @@
-- name: change to upper case
+- name: change to lower case
   hosts: localhost
   vars:
-   greeting: "good morning"
+   greeting: "GOOD MORNING"
   tasks:
-  - name : uppercase
+  - name : lowercase
     ansible.builtin.debug:
-      msg: "{{ greeting  | upper }}"
+      msg: "{{ greeting  | lower }}"
