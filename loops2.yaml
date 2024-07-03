@@ -4,10 +4,10 @@
   tasks:
   - name: install packages
     ansible.builtin.debug:
-    yum:
+  
       name: "{{ item }}"
       state: latest
     loop:
     - nginx
     - mysql
-    
+
