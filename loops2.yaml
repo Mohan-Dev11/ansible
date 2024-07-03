@@ -5,4 +5,4 @@
   tasks:
   - name: install package
     ansible.builtin.debug:
-     action: yum name=httpd state=present 
+     action: yum name=nginx state=present 
