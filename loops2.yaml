@@ -3,10 +3,10 @@
   become: yes 
   tasks:
   - name: install applications
-  
+
     yum:
       name: "{{ item }}"
-      state: latest
+      state: present 
     loop:
     - mysql
     - nginx
