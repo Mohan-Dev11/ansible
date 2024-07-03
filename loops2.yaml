@@ -4,6 +4,7 @@
   tasks:
   - name: install applications
     ansible.builtin.debug:
+    yum:
       name: "{{ item }}"
       state: latest
     loop:
