@@ -2,12 +2,12 @@
   hosts: localhost
   become: yes 
   tasks:
-  - name: install applications
-
+  - name: install packages
+    ansible.builtin.debug:
     yum:
       name: "{{ item }}"
-      state: present 
+      state: latest
     loop:
-    - mysql
     - nginx
-   
+    - mysql
+    
