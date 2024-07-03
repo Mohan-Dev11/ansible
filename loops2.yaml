@@ -1,0 +1,11 @@
+- name: install applications
+  hosts: localhost
+  tasks:
+  - name: install applications
+    ansible.builtin.debug:
+      name: "{{ item }}"
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - postfix  
