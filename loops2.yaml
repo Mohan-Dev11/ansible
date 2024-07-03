@@ -1,5 +1,6 @@
 - name: install applications
   hosts: localhost
+  become: yes 
   tasks:
   - name: install applications
     ansible.builtin.debug:
