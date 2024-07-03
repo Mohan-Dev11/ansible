@@ -10,14 +10,4 @@
     - Ansible
     - AWS  
 
-- name:list names
-  hosts: localhost
-  tasks:
-  - name: print list names
-    ansible.builtin.debug:
-      msg: "I am learning {{ item }}"
-    loop:
-    - Java
-    - linux
-    - python
-          
+
