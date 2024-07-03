@@ -1,5 +1,5 @@
 - name: install applications
-  hosts: localhost
+  hosts: dev
   become: yes 
   tasks:
   - name: install applications
