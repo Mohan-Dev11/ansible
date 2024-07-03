@@ -1,11 +1,8 @@
 - name: install applications
   hosts: localhost
   become: yes 
+  connection: ssh
   tasks:
-  - name: install packages
+  - name: install package
     ansible.builtin.debug:
-     yum: name= "{{ item }}" state= latest
-    loop:
-     - nginx
-     - mysql  
-
+     action: yum name=httpd state=present 
